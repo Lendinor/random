@@ -4,21 +4,23 @@ var namespace = "http://www.w3.org/2000/svg"
 // Fill in this function so that it draws something using SVG shapes!
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
-function randcolor()
-{
-    var rc = Math.random()*10
-    if(rc == 1){
-     rc = red   
-    } else if(rc == 2)
-}
 
 function createFirstScene()
-{
-    var rand1 = Math.random()*100 
-    var rand2 = Math.random()*100
-    var rand3 = Math.random()*100
-    var rand4 = Math.random()
-    makeCircle(rand1,rand2,rand3,"red",rand4);
+{    
+    makeRect(0,0,200,75,"pink",1)   
+    makeRect(0,75,200,25,"blue",1)
+    makeCircle(100,112.5,50,"tan",1)
+    makeRect(100,17.5,7.5,50,"brown",1)
+    makeCircle(103.75,17.5,15,"green",1)
+    var x = Math.random()
+    if(x<.5)
+    {
+        x = 200
+    } else
+    {
+        x = 0
+    }
+    makeCircle(x,0,25,"#FDB813",1)
 }
 
 
@@ -27,11 +29,10 @@ function createFirstScene()
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createSecondScene()
 {
-    var rand1 = Math.random()*100
-    var rand2 = Math.random()*100
-    var rand3 = Math.random()*100
-    var rand4 = Math.random()
-    makeCircle(rand1,rand2,rand3,"yellow",rand4);
+    makeRect(0,0,200,75,"deepskyblue",1)
+    makeRect(0,75,200,25,"green",1)
+    makeCircle(25,112.5,50,"green",1)
+    makeCircle(0,0,25,"#FDB813",1)
 }
 
 
@@ -40,12 +41,68 @@ function createSecondScene()
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createThirdScene()
 {
-    var rand1 = Math.random()*100
-    var rand2 = Math.random()*100
-    var rand3 = Math.random()*100
-    var rand4 = Math.random()
-    makeCircle(rand1,rand2,rand3,"green",rand4);
+    var x = Math.random()
+    if(x <.5)
+    {
+        x = 1
+    } else
+    {
+        x = 0
+    }
+    makeRect(0,0,200,75,"#000019",1)
+    makeRect(0,75,200,25,"tan",1)
+    makeCircle(175,112.5,50,"tan",1)
+    makeRect(100,50,3.75,25,"green",1)
+    makeRect(103,60,10,3.75,"green",1)
+    makeRect(109.2,55,3.75,7,"green",1)
+    makePolygon("0,75,25,50,50,75","#C2B48C",1)
+    //makeCircle(50,25,25,"ivory",1)
+    
+    makeCircle(2,10,1,"white",1)
+    makeCircle(10,20,1,"white",1)
+    makeCircle(20,10,1,"white",1)
+    makeCircle(30,20,1,"white",1)
+    makeCircle(40,10,1,"white",1)
+    makeCircle(50,20,1,"white",1)
+    makeCircle(60,10,1,"white",1)
+    makeCircle(70,20,1,"white",1)
+    makeCircle(80,10,1,"white",1)
+    makeCircle(90,20,1,"white",1)
+    makeCircle(100,10,1,"white",1)
+    makeCircle(110,20,1,"white",1)
+    makeCircle(120,10,1,"white",1)
+    makeCircle(130,20,1,"white",1)
+    makeCircle(140,10,1,"white",1)
+    makeCircle(150,20,1,"white",1)
+    makeCircle(160,10,1,"white",1)
+    makeCircle(170,20,1,"white",1)
+    makeCircle(180,10,1,"white",1)
+    makeCircle(190,20,1,"white",1)
+    makeCircle(198,10,1,"white",1)
 
+    makeCircle(7,20,1,"white",x)
+    makeCircle(15,10,1,"white",x)
+    makeCircle(25,20,1,"white",x)
+    makeCircle(35,10,1,"white",x)
+    makeCircle(45,20,1,"white",x)
+    makeCircle(55,10,1,"white",x)
+    makeCircle(65,20,1,"white",x)
+    makeCircle(75,10,1,"white",x)
+    makeCircle(85,20,1,"white",x)
+    makeCircle(95,10,1,"white",x)
+    makeCircle(105,20,1,"white",x)
+    makeCircle(115,10,1,"white",x)
+    makeCircle(125,20,1,"white",x)
+    makeCircle(135,10,1,"white",x)
+    makeCircle(145,20,1,"white",x)
+    makeCircle(155,10,1,"white",x)
+    makeCircle(165,20,1,"white",x)
+    makeCircle(175,10,1,"white",x)
+    makeCircle(185,20,1,"white",x)
+    makeCircle(195,10,1,"white",x)
+    
+
+    
 }
 
 

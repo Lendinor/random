@@ -12,6 +12,7 @@ function createFirstScene()
     makeCircle(100,112.5,50,"tan",1)
     makeRect(100,17.5,7.5,50,"brown",1)
     makeCircle(103.75,17.5,15,"green",1)
+    makeEllipse(155,75,5,3,"white",1)
     var x = Math.random()
     if(x<.5)
     {
@@ -29,10 +30,22 @@ function createFirstScene()
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createSecondScene()
 {
-    makeRect(0,0,200,75,"deepskyblue",1)
+    var y = Math.random()
+    if(y<.5)
+    {
+        y = 1
+    } else
+    {
+        y = 0
+    }
+
+    makeRect(0,0,200,75,"darkblue",1)
     makeRect(0,75,200,25,"green",1)
     makeCircle(25,112.5,50,"green",1)
-    makeCircle(0,0,25,"#FDB813",1)
+    makeCircle(0,0,25,"orange",1)
+    makeCircle(0,0,24.5,"black",y)
+    makeEllipse(130,75,20,7.5,"green",1)
+    makeEllipse(175,75,15,12.5,"green",1)
 }
 
 
@@ -117,7 +130,7 @@ function createRandomScene()
     // If the number is less than 0.33, call the function to create your first scene.
     // Else, if the number is less than 0.67, call the function to create your second scene.
     // Else, call the function to create your third scene.
-   var dice = Math.random()
+    var dice = Math.random()
   if(dice < 0.17){
     createFirstScene();
   }else if(dice < 0.33){

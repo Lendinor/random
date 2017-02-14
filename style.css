@@ -1,9 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Bahiana');
+
 #button-container {
     text-align: center;
 }
 
 h1 {
     text-align: center;
+    font-family: 'Bahiana', cursive;
+    color: yellow;
 }
 body{
  background-color: blue;   
